@@ -1,0 +1,43 @@
+
+I tried implementing a self-balancing AVL binary search tree.
+
+```
+0$ ./a.out
+count: 2
+first unbalanced node is: 157
+to_balance's parent is root, right
+count: 2
+first unbalanced node is: 182
+to_balance's parent is root, left
+search:
+
+          * 236
+
+     * 182
+
+          * 158
+
+* 157
+
+          * 126
+
+     * 15
+balanced?: 1
+==========================================================
+count: 2
+first unbalanced node is: 10
+to_balance's parent is root, right
+
+     * 110
+
+* 80
+
+          * 70
+
+     * 10
+balanced?: 1
+0$
+```
+
+It uses balancing factor and rotations to maintain AVL properties, instead of
+commonly used Red-black trees.
